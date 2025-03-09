@@ -143,7 +143,7 @@ class TestGame(TestCase):
             f"Alice should have 7 cards, but has {self.players[0].cards_in_hand(),} cards",
         )
 
-        # Draw a card (seeded to be a valid card so it can be played)
+        # Draw a card
         self.game.draw_card(self.players[0], True)
 
         # Check the number of cards for the next player

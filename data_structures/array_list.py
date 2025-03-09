@@ -1,4 +1,4 @@
-""" Implements List ADT using arrays. """
+"""Implements List ADT using arrays."""
 
 __author__ = "Maria Garcia de la Banda, modified by Brendon Taylor, Graeme Gange, and Alexey Ignatiev"
 __docformat__ = "reStructuredText"
@@ -73,7 +73,7 @@ class ArrayList(List[T]):
         """
 
         if len(self) == len(self.array):
-            new_cap = int(1.9 * len(self.array))
+            new_cap = int(2 * len(self.array))
             new_array = ArrayR(new_cap)
             for i in range(len(self)):
                 new_array[i] = self.array[i]
